@@ -1,5 +1,12 @@
+@import "./variables.css";
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+html {
+    background-color: light-dark(var(bg-light), var(--bg-dark));
+    color: light-dark(var(--text-light), var(--text-dark));
 }
