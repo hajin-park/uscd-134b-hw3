@@ -17,3 +17,7 @@ nav ul {
     flex-direction: row;
     list-style: none;
 }
+
+h1 {
+    font-family: "Rubik", sans-serif;
+}
