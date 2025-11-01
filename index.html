@@ -1,85 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hajin Park's Personal Portfolio - Computer Science Student at UC San Diego">
-    <meta name="author" content="Hajin Park">
-    <title>Hajin Park - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages/projects.html">Projects</a></li>
-            <li><a href="pages/hobbies.html">Hobbies</a></li>
-            <li><a href="pages/career.html">Career</a></li>
-            <li><a href="pages/resume.html">Resume</a></li>
-            <li><a href="pages/contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Hajin Park's Personal Portfolio - Computer Science Student at UC San Diego">
+        <meta name="author" content="Hajin Park">
+        <title>Hajin Park - Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="site-frame">
+        <nav class="site-frame-header">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/projects.html">Projects</a></li>
+                <li><a href="pages/hobbies.html">Hobbies</a></li>
+                <li><a href="pages/career.html">Career</a></li>
+                <li><a href="pages/resume.html">Resume</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-    <header>
-        <h1>Hi, I'm Hajin!</h1>
-    </header>
+        <main class="site-frame-body">
+            <header>
+                <h1>Hajin Park - Personal Portfolio</h1>
+            </header>
+            <h1>Hi, I'm Hajin!</h1>
+            <!-- Profile Image -->
+            <section>
+                <picture>
+                    <source srcset="assets/cat.jpeg" type="image/jpeg">
+                    <img src="assets/cat.jpeg" alt="Profile image representing my approachable personality" width="200">
+                </picture>
+            </section>
 
-    <main>
-        <h1></h1>
-
-        <!-- Profile Image -->
-        <section>
-            <picture>
-                <source srcset="assets/cat.jpeg" type="image/jpeg">
-                <img src="assets/cat.jpeg" alt="Profile image representing my approachable personality" width="200">
-            </picture>
-        </section>
-
-        <!-- Bio Section -->
-        <section>
-            <h2>About Me</h2>
-            <p>
-                Fourth year at the University of California, San Diego, pursuing a B.S. in Computer Science from the Jacobs School of Engineering.
-            </p>
-        </section>
-
-        <!-- Education Section -->
-        <section>
-            <h2>Education</h2>
-            <article>
-                <h3>University of California, San Diego</h3>
+            <!-- Bio Section -->
+            <section>
+                <h2>About Me</h2>
                 <p>
-                    <strong>Degree:</strong> Bachelor of Science in Computer Science<br>
-                    <i>Expected Graduation: June 2026</i><br>
-                    <b>GPA:</b> 3.7
+                    Fourth year at the University of California, San Diego, pursuing a B.S. in Computer Science from the Jacobs School of Engineering.
                 </p>
-                <p>
-                    <strong>Relevant Coursework:</strong> Data Structures and Algorithms, Software Engineering,
-                    AI: Probabilistic Models, Machine Learning Algorithms, Networked Systems,
-                    Recommender Systems and Data Mining, Database System Principles, Compiler Construction,
-                    Computer Organization and Assembly
-                </p>
-            </article>
-        </section>
+            </section>
 
-        <!-- Site Progress -->
-        <section>
-            <h3>Portfolio Completion Status</h3>
-            <progress value="95" max="100">95%</progress>
-            <br>
-            <span>95% Complete</span>
-        </section>
-    </main>
+            <!-- Education Section -->
+            <section>
+                <h2>Education</h2>
+                <article>
+                    <h3>University of California, San Diego</h3>
+                    <p>
+                        <strong>Degree:</strong> Bachelor of Science in Computer Science<br>
+                        <i>Expected Graduation: June 2026</i><br>
+                        <b>GPA:</b> 3.7
+                    </p>
+                    <p>
+                        <strong>Relevant Coursework:</strong> Data Structures and Algorithms, Software Engineering,
+                        AI: Probabilistic Models, Machine Learning Algorithms, Networked Systems,
+                        Recommender Systems and Data Mining, Database System Principles, Compiler Construction,
+                        Computer Organization and Assembly
+                    </p>
+                </article>
+            </section>
 
-    <footer>
-        <p>&copy; 2025 Hajin Park. All rights reserved.</p>
-    </footer>
+            <!-- Site Progress -->
+            <section>
+                <h3>Portfolio Completion Status</h3>
+                <progress value="95" max="100">95%</progress>
+                <br>
+                <span>95% Complete</span>
+            </section>
+        </main>
 
-    <!-- Custom element that logs to console -->
-    <hello-world></hello-world>
+        <footer class="site-frame-footer">
+            <p>&copy; 2025 Hajin Park. All rights reserved.</p>
+        </footer>
 
-    <noscript>
-        <p>This site works best with JavaScript enabled, but all content is accessible without it.</p>
-    </noscript>
-</body>
+        <!-- Custom element that logs to console -->
+        <hello-world></hello-world>
+
+        <noscript>
+            <p>This site works best with JavaScript enabled, but all content is accessible without it.</p>
+        </noscript>
+    </body>
 </html>

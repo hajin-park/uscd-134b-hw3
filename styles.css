@@ -28,6 +28,32 @@ nav ul {
     }
 }
 
+.site-frame {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.site-frame-header {
+    background-color: var(--background, black);
+    color: var(--text, white);
+    padding: 1rem;
+}
+
+.site-frame-body {
+    padding: 1rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.site-frame-footer {
+    background-color: var(--background, black);
+    color: var(--text, white);
+    padding: 1rem;
+    text-align: center;
+}
+
 /* Custom CSS element: skill-badge */
 skill-badge {
     display: inline-block;
