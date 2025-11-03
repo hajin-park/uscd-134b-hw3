@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+@view-transition {
+   navigation: auto;
+}
+
 html {
     background-color: var(--background, white);
     color: var(--text, black);
@@ -19,13 +23,37 @@ nav ul {
     flex-direction: row;
     list-style: none;
 
-    a {
-        color: var(--accent, white);    
+    a {        
+        position: relative;
+        color: var(--text, white);
         text-decoration: none;
+        transition: color 0.2s ease;
     }
 
     a:active {
         color: var(--secondary, white);
+    }
+
+    a:hover {
+        color: var(--primary, black);
+        z-index: 1;
+    }
+
+    /* highlighter hover transition */
+    a::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 40%;
+        left: 8%;
+        height: 75%;
+        width: 0%;
+        background-color: var(--accent-foreground, gold);
+        transition: width 0.3s ease;
+    }
+
+    a:hover::before {
+        width: 100%;
     }
 }
 
