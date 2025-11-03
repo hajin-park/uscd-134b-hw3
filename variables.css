@@ -37,7 +37,30 @@
     --accent: oklch(57.32% 0.127 136.99);
 }
 
+/* Mobile-first default values */
 :root {
     --font-primary: "Rubik";
     --font-secondary: "Inter";
+    --page-padding-width: 10%;
+}
+
+/* iPhone 14 Pro Max width */
+@media screen and (min-width: 430px) {
+    :root {
+        --page-padding-width: 15%;
+    }
+}
+
+/* iPad Pro width */
+@media screen and (min-width: 1024px) {
+    :root {
+        --page-padding-width: 20%;
+    }
+}
+
+/* Random desktop width */
+@media screen and (min-width: 1920px) {
+    :root {
+        --page-padding-width: 25%;
+    }
 }
