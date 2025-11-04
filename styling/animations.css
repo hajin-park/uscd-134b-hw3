@@ -116,7 +116,7 @@
 }
 
 /* Cat gallery animations */
-.cat-gallery {
+cat-gallery {
     display: flex;
     flex-direction: column;
     gap: clamp(1rem, 2vw, 1.5rem);
@@ -126,7 +126,7 @@
     padding: clamp(2rem, 4vw, 4rem) 0;
 }
 
-.cat-row {
+cat-row {
     display: flex;
     gap: clamp(1rem, 2vw, 1.5rem);
     animation-duration: 40s;
@@ -137,11 +137,11 @@
 }
 
 /* Alternating row animations */
-.cat-row:nth-child(odd) {
+cat-row:nth-child(odd) {
     animation-name: slideRight;
 }
 
-.cat-row:nth-child(even) {
+cat-row:nth-child(even) {
     animation-name: slideLeft;
 }
 
