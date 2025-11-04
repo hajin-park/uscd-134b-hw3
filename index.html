@@ -26,6 +26,7 @@
                 <li><a href="pages/career.html">Career</a></li>
                 <li><a href="pages/resume.html">Resume</a></li>
                 <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="experiments.html">Experiments</a></li>
             </ul>
         </nav>
 
@@ -33,47 +34,29 @@
             <header>
                 <h1>Hi, I'm Hajin!</h1>
             </header>
-            <!-- Profile Image -->
-            <section>
-                <picture>
+
+            <!-- Profile Image and About Me Section -->
+            <section class="hero-section">
+                <picture class="headshot-container">
                     <source srcset="assets/headshot.jpeg" type="image/jpeg">
-                    <img src="assets/headshot.jpeg" alt="Profile image representing my approachable personality" width="200">
+                    <img src="assets/headshot.jpeg" alt="Profile image representing my approachable personality" class="headshot-image">
                 </picture>
-            </section>
-
-            <!-- Bio Section -->
-            <section>
-                <h2>About Me</h2>
-                <p>
-                    Fourth year at the University of California, San Diego, pursuing a B.S. in Computer Science from the Jacobs School of Engineering.
-                </p>
-            </section>
-
-            <!-- Education Section -->
-            <section>
-                <h2>Education</h2>
-                <article>
-                    <h3>University of California, San Diego</h3>
+                <div class="about-me-text">
+                    <h2>About Me</h2>
                     <p>
-                        <strong>Degree:</strong> Bachelor of Science in Computer Science<br>
-                        <i>Expected Graduation: June 2026</i><br>
-                        <b>GPA:</b> 3.7
+                        Fourth year at the University of California, San Diego, pursuing a B.S. in Computer Science from the Jacobs School of Engineering.
                     </p>
-                    <p>
-                        <strong>Relevant Coursework:</strong> Data Structures and Algorithms, Software Engineering,
-                        AI: Probabilistic Models, Machine Learning Algorithms, Networked Systems,
-                        Recommender Systems and Data Mining, Database System Principles, Compiler Construction,
-                        Computer Organization and Assembly
-                    </p>
-                </article>
+                </div>
             </section>
 
-            <!-- Site Progress -->
-            <section>
-                <h3>Portfolio Completion Status</h3>
-                <progress value="95" max="100">95%</progress>
-                <br>
-                <span>95% Complete</span>
+            <!-- Social Media Links -->
+            <section class="social-links">
+                <a href="https://github.com/hajin-park" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/icons/github-icon-2.svg" alt="GitHub Profile">
+                </a>
+                <a href="https://www.linkedin.com/in/hajinpark/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/icons/linkedin-icon-2.svg" alt="LinkedIn Profile">
+                </a>
             </section>
         </main>
 

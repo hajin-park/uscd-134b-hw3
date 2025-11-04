@@ -4,45 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="HTML Element Experiments">
+    <link rel="stylesheet" href="../styling/styles.css">
     <title>Experiments</title>
-    <style>
-        header {
-            border: 2px solid #000;
-        }
-        nav {
-            border: 2px solid #000;
-        }
-        main {
-            border: 2px solid #000;
-        }
-        section {
-            border: 1px solid #000;
-        }
-        footer {
-            border: 2px solid #000;
-        }
-    </style>
 </head>
-<body>
-    <header>
-        <h1>Hajin Park - Personal Portfolio</h1>
-        <p>This page demonstrates various HTML elements for educational purposes.</p>
-    </header>
-
-    <nav>
+<body class="site-frame">
+    <nav class="site-frame-header">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger-label">
+            <img src="../assets/icons/burger-menu.svg" alt="Open menu" class="hamburger-icon">
+            <img src="../assets/icons/exit-right.svg" alt="Close menu" class="close-icon">
+        </label>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages/projects.html">Projects</a></li>
-            <li><a href="pages/cats.html">Cats</a></li>
-            <li><a href="pages/career.html">Career</a></li>
-            <li><a href="pages/resume.html">Resume</a></li>
-            <li><a href="pages/contact.html">Contact</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="cats.html">Cats</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="experiments.html">Experiments</a></li>
         </ul>
     </nav>
 
-    <main>
-        <h1>HTML Element Experiments</h1>
+    <main class="site-frame-body">
+        <header>
+            <h1>Hajin Park - Personal Portfolio</h1>
+            <p>This page demonstrates various HTML elements for educational purposes.</p>
+        </header>
 
         <section>
             <h2>Picture Element Demo</h2>
@@ -196,7 +183,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="site-frame-footer">
         <p>&copy; 2025 Hajin Park. All rights reserved.</p>
     </footer>
 </body>
