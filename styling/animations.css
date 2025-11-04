@@ -22,7 +22,7 @@
 
 .transition-line-2 {
     left: 33.333%;
-    top: -102%;
+    top: -110%;
     background-color: light-dark(var(--accent-foreground-light), var(--accent-foreground-dark));
     view-transition-name: bar-middle;
 }
