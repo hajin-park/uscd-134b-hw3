@@ -3,46 +3,46 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-        --text: oklch(13.42% 0.010 145.00);
-        --background: oklch(98.68% 0.003 128.49);
-        --primary: oklch(66.05% 0.087 141.58);
-        --primary-foreground: oklch(90.921% 0.06158 141.527);
-        --secondary: oklch(76.82% 0.054 327.10);
-        --secondary-foreground: oklch(92.383% 0.02233 325.537);
-        --accent: oklch(70.25% 0.039 32.86);
-        --accent-foreground: oklch(82.585% 0.01717 26.394);
+        --text: color(display-p3 0.05 0.08 0.07);
+        --background: color(display-p3 0.99 0.99 0.98);
+        --primary: color(display-p3 0.55 0.75 0.70);
+        --primary-foreground: color(display-p3 0.85 0.95 0.92);
+        --secondary: color(display-p3 0.85 0.70 0.85);
+        --secondary-foreground: color(display-p3 0.95 0.88 0.95);
+        --accent: color(display-p3 0.85 0.80 0.60);
+        --accent-foreground: color(display-p3 0.92 0.88 0.75);
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --text: oklch(97.90% 0.005 145.54);
-        --background: oklch(11.90% 0.007 128.02);
-        --primary: oklch(61.12% 0.088 141.54);
-        --primary-foreground: oklch(73.01% 0.05599 140.922);
-        --secondary: oklch(38.86% 0.064 327.82);
-        --secondary-foreground: oklch(65.047% 0.05042 326.069);
-        --accent: oklch(46.24% 0.044 33.07);
-        --accent-foreground: oklch(68.232% 0.01537 39.157);
+        --text: color-mix(in display-p3, color(display-p3 0.95 0.98 0.97), white 5%);
+        --background: color-mix(in display-p3, color(display-p3 0.08 0.10 0.09), black 20%);
+        --primary: color-mix(in display-p3, color(display-p3 0.55 0.75 0.70), black 15%);
+        --primary-foreground: color-mix(in display-p3, color(display-p3 0.65 0.80 0.75), black 10%);
+        --secondary: color-mix(in display-p3, color(display-p3 0.85 0.70 0.85), black 40%);
+        --secondary-foreground: color-mix(in display-p3, color(display-p3 0.75 0.65 0.75), black 15%);
+        --accent: color-mix(in display-p3, color(display-p3 0.85 0.80 0.60), black 35%);
+        --accent-foreground: color-mix(in display-p3, color(display-p3 0.80 0.75 0.60), black 15%);
     }
 }
 
 :root[data-theme="light"] {
-    --text: oklch(13.42% 0.010 145.00);
-    --background: oklch(98.68% 0.003 128.49);
-    --primary: oklch(66.05% 0.087 141.58);
-    --secondary: oklch(76.82% 0.054 327.10);
-    --accent: oklch(70.25% 0.039 32.86);
-    --accent-foreground: oklch(86.81% 0.01612 31.715);
+    --text: color(display-p3 0.05 0.08 0.07);
+    --background: color(display-p3 0.99 0.99 0.98);
+    --primary: color(display-p3 0.55 0.75 0.70);
+    --secondary: color(display-p3 0.85 0.70 0.85);
+    --accent: color(display-p3 0.85 0.80 0.60);
+    --accent-foreground: color(display-p3 0.92 0.88 0.75);
 }
 
 :root[data-theme="dark"] {
-    --text: oklch(97.90% 0.005 145.54);
-    --background: oklch(11.90% 0.007 128.02);
-    --primary: oklch(61.12% 0.088 141.54);
-    --secondary: oklch(38.86% 0.064 327.82);
-    --accent: oklch(46.24% 0.044 33.07);
-    --accent-foreground: oklch(68.232% 0.01537 39.157);
+    --text: color-mix(in display-p3, color(display-p3 0.95 0.98 0.97), white 5%);
+    --background: color-mix(in display-p3, color(display-p3 0.08 0.10 0.09), black 20%);
+    --primary: color-mix(in display-p3, color(display-p3 0.55 0.75 0.70), black 15%);
+    --secondary: color-mix(in display-p3, color(display-p3 0.85 0.70 0.85), black 40%);
+    --accent: color-mix(in display-p3, color(display-p3 0.85 0.80 0.60), black 35%);
+    --accent-foreground: color-mix(in display-p3, color(display-p3 0.80 0.75 0.60), black 15%);
 }
 
 /* Mobile-first default values */
