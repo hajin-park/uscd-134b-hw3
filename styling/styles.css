@@ -113,6 +113,7 @@ html {
   }
 }
 
+/* custom navbar styles */
 nav ul {
   display: flex;
   justify-content: space-between;
@@ -120,6 +121,7 @@ nav ul {
   list-style: none;
   position: relative;
 
+  /* custom highlighter themed navbar */
   &::before {
     content: "";
     position: absolute;
@@ -163,7 +165,7 @@ nav ul {
     z-index: 1;
   }
 
-  /* highlighter hover transition */
+  /* custom navbar highlighter animation on hover */
   a::before {
     content: "";
     position: absolute;
@@ -324,7 +326,7 @@ nav ul {
   }
 }
 
-/* Home page */
+/* different layout for the home page */
 .hero-section {
   display: flex;
   justify-content: space-between;
