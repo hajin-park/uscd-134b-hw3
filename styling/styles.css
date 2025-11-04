@@ -289,7 +289,7 @@ nav ul {
     }
 
     section {
-        margin-bottom: clamp(2rem, 4vw, 4rem);
+        margin-bottom: clamp(1rem, 3vw, 3rem);
     }
 
     iframe {
