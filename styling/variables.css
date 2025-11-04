@@ -1,54 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-@media (prefers-color-scheme: light) {
-    :root {
-        --text: color(display-p3 0.05 0.08 0.07);
-        --background: color(display-p3 0.99 0.99 0.98);
-        --primary: color(display-p3 0.55 0.75 0.70);
-        --primary-foreground: color(display-p3 0.85 0.95 0.92);
-        --secondary: color(display-p3 0.85 0.70 0.85);
-        --secondary-foreground: color(display-p3 0.95 0.88 0.95);
-        --accent: color(display-p3 0.85 0.80 0.60);
-        --accent-foreground: color(display-p3 0.92 0.88 0.75);
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --text: color-mix(in display-p3, color(display-p3 0.95 0.98 0.97), white 5%);
-        --background: color-mix(in display-p3, color(display-p3 0.08 0.10 0.09), black 20%);
-        --primary: color-mix(in display-p3, color(display-p3 0.55 0.75 0.70), black 15%);
-        --primary-foreground: color-mix(in display-p3, color(display-p3 0.65 0.80 0.75), black 10%);
-        --secondary: color-mix(in display-p3, color(display-p3 0.85 0.70 0.85), black 40%);
-        --secondary-foreground: color-mix(in display-p3, color(display-p3 0.75 0.65 0.75), black 15%);
-        --accent: color-mix(in display-p3, color(display-p3 0.85 0.80 0.60), black 35%);
-        --accent-foreground: color-mix(in display-p3, color(display-p3 0.80 0.75 0.60), black 15%);
-    }
-}
-
-:root[data-theme="light"] {
-    --text: color(display-p3 0.05 0.08 0.07);
-    --background: color(display-p3 0.99 0.99 0.98);
-    --primary: color(display-p3 0.55 0.75 0.70);
-    --secondary: color(display-p3 0.85 0.70 0.85);
-    --accent: color(display-p3 0.85 0.80 0.60);
-    --accent-foreground: color(display-p3 0.92 0.88 0.75);
-}
-
-:root[data-theme="dark"] {
-    --text: color-mix(in display-p3, color(display-p3 0.95 0.98 0.97), white 5%);
-    --background: color-mix(in display-p3, color(display-p3 0.08 0.10 0.09), black 20%);
-    --primary: color-mix(in display-p3, color(display-p3 0.55 0.75 0.70), black 15%);
-    --secondary: color-mix(in display-p3, color(display-p3 0.85 0.70 0.85), black 40%);
-    --accent: color-mix(in display-p3, color(display-p3 0.85 0.80 0.60), black 35%);
-    --accent-foreground: color-mix(in display-p3, color(display-p3 0.80 0.75 0.60), black 15%);
-}
-
-/* Mobile-first default values */
 :root {
+    color-scheme: light dark;
+
+    /* Light theme colors */
+    --text-light: color(display-p3 0.05 0.08 0.07);
+    --background-light: color(display-p3 0.99 0.99 0.98);
+    --primary-light: color(display-p3 0.55 0.75 0.70);
+    --primary-foreground-light: color(display-p3 0.85 0.95 0.92);
+    --secondary-light: color(display-p3 0.85 0.70 0.85);
+    --secondary-foreground-light: color(display-p3 0.95 0.88 0.95);
+    --accent-light: color(display-p3 0.85 0.80 0.60);
+    --accent-foreground-light: color(display-p3 0.92 0.88 0.75);
+
+    /* Dark theme colors */
+    --text-dark: color-mix(in display-p3, color(display-p3 0.95 0.98 0.97), white 5%);
+    --background-dark: color-mix(in display-p3, color(display-p3 0.08 0.10 0.09), black 20%);
+    --primary-dark: color-mix(in display-p3, color(display-p3 0.55 0.75 0.70), black 5%);
+    --primary-foreground-dark: color-mix(in display-p3, color(display-p3 0.65 0.80 0.75), black 50%);
+    --secondary-dark: color-mix(in display-p3, color(display-p3 0.85 0.70 0.85), black 15%);
+    --secondary-foreground-dark: color-mix(in display-p3, color(display-p3 0.75 0.65 0.75), black 40%);
+    --accent-dark: color-mix(in display-p3, color(display-p3 0.85 0.80 0.60), black 15%);
+    --accent-foreground-dark: color-mix(in display-p3, color(display-p3 0.80 0.75 0.60), black 40%);
+
+    /* Font and spacing variables */
     --font-primary: "Lora";
-    --font-secondary: "Inter";
     --page-padding-height: 2%;
     --page-padding-width: 10%;
 }
@@ -56,7 +32,7 @@
 /* iPhone 14 Pro Max width */
 @media screen and (min-width: 430px) {
     :root {
-        --page-padding-height: 3%;
+        --page-padding-height: 4%;
         --page-padding-width: 15%;
     }
 }
@@ -64,7 +40,7 @@
 /* iPad Pro width */
 @media screen and (min-width: 1024px) {
     :root {
-        --page-padding-height: 4%;
+        --page-padding-height: 5%;
         --page-padding-width: 20%;
     }
 }
@@ -72,7 +48,7 @@
 /* Random desktop width */
 @media screen and (min-width: 1920px) {
     :root {
-        --page-padding-height: 5%;
+        --page-padding-height: 6%;
         --page-padding-width: 25%;
     }
 }

@@ -22,7 +22,7 @@
 <li>CSS Animations, Transitions and Transforms <strong>(3 pts)</strong></li>
 <li>Media Queries (See Part 3 - Responsive Web Design)</li>
 <li>Nested and Scoped CSS <strong>(4 pts)</strong></li>
-<li>Any new CSS-related feature from Baseline 2024 or Baseline 2025 (see <a href="https://web.dev/baseline/2024" target="_blank">https://web.dev/baseline/2024</a>). For full credit, include in your submission a 2+ sentence-long description of the feature you chose to implement (light-dark()). <strong>(2 pts for correct implementation of the feature, 2 pts for the description)</strong></li>
+<li>The light-dark() CSS feature from Baseline 2024 (see <a href="https://web.dev/baseline/2024" target="_blank">https://web.dev/baseline/2024</a>). For full credit, include in your submission a 2+ sentence-long description of the feature you chose to implement (light-dark()). <strong>(2 pts for correct implementation of the feature, 2 pts for the description)</strong></li>
 </ul>
 <h3>Extra Credit:&nbsp;</h3>
 <p>Some of the following might not have the maximum adoption (currently, most are hovering around 87-88% adoption) but are worth trying out:</p>
@@ -31,6 +31,7 @@
 <li>New selectors like has() <strong>(2 pts)</strong></li>
 </ul>
 <p><span style="background-color: #a0e0e9;">Any CSS written should be as standard as is possible.&nbsp;<br><br></span></p>
+
 <h2>Part 2 - Image Usage (15 pts)</h2>
 <p>To further enhance your page presentation you should use images. Our minimum threshold for image usage is "a reasonable amount" based on your webpage content - we will take a holistic approach to this.</p>
 <ul>
@@ -40,15 +41,18 @@
 <li>To adjust pictures with their frames we recommend using <em>object-position</em> and <em>object-fit</em> attributes.</li>
 </ul>
 <p>&nbsp;</p>
+
 <h2>Part 3 - Responsive Design (10 points)</h2>
 <p>To address device diversity your site should practice the principle of responsive web design. You should account for three types of form factors. Very small screen (phone), tablet or restrictive laptop, and desktop <strong>(6 pts total)</strong>. Employ appropriate pixel breakpoints based upon those factors. There may be variation of those dimensions so do a little research <em>(Note: DevTools can help simulate different screen sizes)</em></p>
 <p>Make sure your CSS layouts reflow appropriately and do not require pinch, zoom, or unnecessary horizontal scroll <strong>(3 pts)</strong>. Also make sure per the previous section that images are sized appropriately per device dimension.</p>
 <p>Lastly, you may see that the different devices suggest concrete interface changes (e.g.: emergence of a Hamburger menu, touch-aware layout, etc.). You need to show evidence that your design adjusts to address such things <strong>(1</strong><strong>&nbsp;pt)</strong>.</p>
 <p>&nbsp;</p>
+
 <h2>Part 4 - Aesthetics and Usability (10 pts + 5 EC)</h2>
 <p>The look of the site and our ability as end users to understand what you are doing is paramount. No matter how well we do our sites functionally, if we have a poor experience, we will ultimately fail.</p>
 <p>We award up to <strong>5 pts </strong>for the <span style="background-color: #e6b8e9;">aesthetics</span> and <strong>5 pts</strong>for the <span style="background-color: #e6b8e9;">usability</span> of the site. If you are simple and precise in look&nbsp; <em>(aka "minimalistic") </em>and <span style="text-decoration: underline;">obvious in navigation,</span> you will likely get most of the points, but there is inevitable subjectivity based upon the interpretation of the graders. While we have kept the amount of points very low, understand in "real life" most people would attach most of the points here. Particularly excellent jobs may receive up to 5 extra credit points at our discretion.</p>
 <p>&nbsp;</p>
+
 <h2>Restrictions and Logistic Details</h2>
 <ul>
 <li><span style="background-color: #a0e0e9;"><strong>All CSS must be hand authored - no frameworks like Twitter Bootstrap or Tailwind (points can be lost).</strong></span></li>
