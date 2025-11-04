@@ -1,3 +1,5 @@
+@import "./variables.css";
+
 /* CSS animation with view-transition */
 @view-transition {
    navigation: auto;
@@ -14,14 +16,14 @@
 .transition-line-1 {
     left: 0;
     top: 100%;
-    background-color: var(--primary);
+    background-color: var(--primary-foreground);
     view-transition-name: bar-left;
 }
 
 .transition-line-2 {
     left: 33.333%;
     top: -100%;
-    background-color: var(--accent);
+    background-color: var(--accent-foreground);
     view-transition-name: bar-middle;
 }
 
@@ -29,7 +31,7 @@
     left: 66.666%;
     top: 100%;
     width: 33.334%;
-    background-color: var(--secondary);
+    background-color: var(--secondary-foreground);
     view-transition-name: bar-right;
 }
 
