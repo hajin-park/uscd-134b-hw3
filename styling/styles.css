@@ -1,0 +1,141 @@
+@import "./variables.css";
+@import "./animations.css";
+
+
+/* CSS global reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--background, white);
+    color: var(--text, black);
+    font-family: var(--font-primary, sans-serif);
+    padding: 0 var(--page-padding-width, 10%);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 4%;
+    margin-bottom: 8%;
+
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -3;
+        top: 4%;
+        left: 12%;
+        height: 8%;
+        width: 75%;
+        background-color: var(--secondary, gold);
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: -2;
+        top: 8%;
+        left: 24%;
+        height: 8%;
+        width: 70%;
+        background-color: var(--accent, gold);
+    }
+
+    a {        
+        position: relative;
+        color: var(--text, white);
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    a:active {
+        color: var(--secondary, white);
+    }
+
+    a:hover {
+        color: var(--primary, white);
+        z-index: 1;
+    }
+
+    /* highlighter hover transition */
+    a::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 40%;
+        left: 8%;
+        height: 75%;
+        width: 0%;
+        background-color: var(--accent-foreground, gold);
+        transition: width 0.3s ease;
+    }
+
+    a:hover::before {
+        width: 100%;
+    }
+}
+
+.site-frame {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.site-frame-header {
+    grid-row: 1;
+    background-color: transparent;
+    color: var(--text, white);
+    padding: 1rem;
+}
+
+.site-frame-body {
+    grid-row: 2;
+    padding: 1rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+    p {
+        font-family: var(--font-secondary, monospace);
+    }
+}
+
+.site-frame-footer {
+    grid-row: 3;
+    background-color: var(--background, black);
+    color: var(--text, white);
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Custom CSS element: skill-badge */
+skill-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    margin: 4px;
+    border: 2px solid #333;
+    border-radius: 12px;
+    background-color: #f0f0f0;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+skill-badge[category="language"] {
+    background-color: #e3f2fd;
+    border-color: #2196f3;
+}
+
+skill-badge[category="technology"] {
+    background-color: #f3e5f5;
+    border-color: #9c27b0;
+}
+
+skill-badge[category="framework"] {
+    background-color: #e8f5e9;
+    border-color: #4caf50;
+}
